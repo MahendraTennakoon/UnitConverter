@@ -9,40 +9,36 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var ouncesField: UITextField!
     
     // weight in grams
-    var weight = 0.0
-    
-    let gramsInKilogram:Double = 1000.0
-    let gramsInPound:Double = 453.592
-    let gramsInOunce:Double = 28.3495
+    var weightInGrams = 0.0
     
     @IBAction func updateWeight(_ sender: UITextField) {
         let value = Double(sender.text!)
         
         switch sender {
         case gramsField:
-            weight = value!
+            weightInGrams = value!
             break
         case kilogramsField:
-            weight = value! * gramsInKilogram
+            weightInGrams = value! * Weight.gramsInKilogram.rawValue
             break
         case poundsField:
-            weight = value! * gramsInPound
+            weightInGrams = value! * Weight.gramsInPound.rawValue
             break
         case ouncesField:
-            weight = value! * gramsInOunce
+            weightInGrams = value! * Weight.gramsInOunce.rawValue
             break
         default:
-            weight = 0
+            weightInGrams = 0
         }
         
         self.updateUI()
     }
     
     func updateUI() {
-        gramsField.text = String(weight)
-        kilogramsField.text = String(weight / gramsInKilogram)
-        poundsField.text = String(weight / gramsInPound)
-        ouncesField.text = String(weight / gramsInOunce)
+        gramsField.text = String(weightInGrams)
+        kilogramsField.text = String(weightInGrams / Weight.gramsInKilogram.rawValue)
+        poundsField.text = String(weightInGrams / Weight.gramsInPound.rawValue)
+        ouncesField.text = String(weightInGrams / Weight.gramsInOunce.rawValue)
     }
 }
 
