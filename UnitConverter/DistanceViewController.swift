@@ -19,8 +19,6 @@ class DistanceViewController: UIViewController {
         var kilometres: Double = 0
         var miles: Double = 0
         
-        print("sasas")
-        
         switch sender {
         case metresField:
             metres = value!
