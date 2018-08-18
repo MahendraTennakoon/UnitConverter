@@ -1,25 +1,34 @@
-//
-//  FirstViewController.swift
-//  UnitConverter
-//
-//  Created by Kumarapperuma, Tharindu on 8/17/18.
-//  Copyright © 2018 MADD. All rights reserved.
-//
-
 import UIKit
 
 class FirstViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    @IBOutlet weak var gramsField: UITextField!
+    @IBOutlet weak var kilogramsField: UITextField!
+    // weight in grams
+    var weight = 0.0
+    
+    
+    @IBAction func updateWeight(_ sender: UITextField) {
+        let value = Double(sender.text!)
+        
+        switch sender {
+        case gramsField:
+            weight = value!
+            break
+        case kilogramsField:
+            weight = value! * 1000
+            break
+        default:
+            weight = 0
+        }
+        
+        self.updateUI()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+    func updateUI() {
+        gramsField.text = String(weight)
+        kilogramsField.text = String(weight / 1000)
     }
-
-
 }
 
