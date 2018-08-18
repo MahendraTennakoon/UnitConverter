@@ -118,8 +118,7 @@
 				E2316D7921273750005EB8C1 /* Assets.xcassets */,
 				E2316D7B21273750005EB8C1 /* LaunchScreen.storyboard */,
 				E2316D7E21273750005EB8C1 /* Info.plist */,
-				E2316DA02128A572005EB8C1 /* Weight.swift */,
-				E2316DA22128C238005EB8C1 /* Temperature.swift */,
+				E2316DAC2128DF79005EB8C1 /* Enums */,
 				E2316DA42128CAD0005EB8C1 /* MetricConversionStrategy.swift */,
 				E2316DA62128CBCC005EB8C1 /* WeightConversionStrategy.swift */,
 				E2316DA82128CCA3005EB8C1 /* TemperatureConversionStrategy.swift */,
@@ -144,6 +143,15 @@
 				E2316D9421273750005EB8C1 /* Info.plist */,
 			);
 			path = UnitConverterUITests;
+			sourceTree = "<group>";
+		};
+		E2316DAC2128DF79005EB8C1 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E2316DA02128A572005EB8C1 /* Weight.swift */,
+				E2316DA22128C238005EB8C1 /* Temperature.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
