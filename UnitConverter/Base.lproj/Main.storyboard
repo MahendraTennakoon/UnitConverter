@@ -130,23 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1541.5999999999999" y="-1012.4437781109445"/>
-        </scene>
-        <!--Temperature-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Temperature" id="i38-la-T9k"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1543" y="-362"/>
+            <point key="canvasLocation" x="1880.8" y="-1012.4437781109445"/>
         </scene>
         <!--Speed-->
         <scene sceneID="N7R-hu-Ku9">
@@ -176,35 +160,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="DLO-k5-Cwo" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="DrR-S7-D9b" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="nSc-yp-fPN" kind="relationship" relationship="viewControllers" id="gDc-Yt-cUe"/>
                         <segue destination="Pb6-tr-vMh" kind="relationship" relationship="viewControllers" id="NtU-rV-m3z"/>
+                        <segue destination="nbR-x6-uOp" kind="relationship" relationship="viewControllers" id="nic-Y3-Qhg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
-        <!--Temperature-->
-        <scene sceneID="vJi-Ij-khl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DrR-S7-D9b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Temperature" image="second" id="cPa-gy-q4n"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qed-Wm-IiC">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NEF-gf-VyJ">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="KsG-Df-yJb"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2YK-D2-Pdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="747.20000000000005" y="-361.61919040479762"/>
         </scene>
         <!--Distance-->
         <scene sceneID="Dzz-Cm-B7H">
@@ -259,6 +222,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dj-Tl-l2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747.20000000000005" y="-1024.5877061469266"/>
+        </scene>
+        <!--Temperature-->
+        <scene sceneID="4pP-B5-26I">
+            <objects>
+                <viewController id="ufW-Mi-oye" customClass="TemperatureViewController" customModule="UnitConverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wWR-Jj-FPo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTb-IB-7U7">
+                                <rect key="frame" x="112" y="86" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMp-QP-eyh">
+                                <rect key="frame" x="16" y="135" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YiY-yI-ozS">
+                                <rect key="frame" x="112" y="132" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-0p-vYh">
+                                <rect key="frame" x="16" y="181" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r82-rJ-6mS">
+                                <rect key="frame" x="112" y="178" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celcius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUB-5X-PoQ">
+                                <rect key="frame" x="16" y="89" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ljc-PA-EB9" firstAttribute="trailing" secondItem="jTb-IB-7U7" secondAttribute="trailing" constant="16" id="08D-7q-MsQ"/>
+                            <constraint firstItem="mUB-5X-PoQ" firstAttribute="leading" secondItem="Ljc-PA-EB9" secondAttribute="leading" constant="16" id="1Qw-kZ-YSP"/>
+                            <constraint firstItem="jTb-IB-7U7" firstAttribute="baseline" secondItem="mUB-5X-PoQ" secondAttribute="baseline" id="2UJ-uH-8oU"/>
+                            <constraint firstItem="qMp-QP-eyh" firstAttribute="leading" secondItem="Ljc-PA-EB9" secondAttribute="leading" constant="16" id="2vT-Ay-DZ3"/>
+                            <constraint firstItem="r82-rJ-6mS" firstAttribute="baseline" secondItem="bhK-0p-vYh" secondAttribute="baseline" id="5v9-KQ-Eft"/>
+                            <constraint firstItem="Ljc-PA-EB9" firstAttribute="trailing" secondItem="YiY-yI-ozS" secondAttribute="trailing" constant="16" id="6a0-Hf-egz"/>
+                            <constraint firstItem="YiY-yI-ozS" firstAttribute="baseline" secondItem="qMp-QP-eyh" secondAttribute="baseline" id="Hnw-uH-2JQ"/>
+                            <constraint firstItem="YiY-yI-ozS" firstAttribute="width" secondItem="jTb-IB-7U7" secondAttribute="width" id="OSv-RO-IIO"/>
+                            <constraint firstItem="qMp-QP-eyh" firstAttribute="top" secondItem="mUB-5X-PoQ" secondAttribute="bottom" constant="25" id="OT5-f4-5gs"/>
+                            <constraint firstItem="r82-rJ-6mS" firstAttribute="width" secondItem="jTb-IB-7U7" secondAttribute="width" id="S6w-9T-aRm"/>
+                            <constraint firstItem="jTb-IB-7U7" firstAttribute="leading" secondItem="mUB-5X-PoQ" secondAttribute="trailing" constant="40" id="W7R-qb-2zk"/>
+                            <constraint firstItem="bhK-0p-vYh" firstAttribute="top" secondItem="qMp-QP-eyh" secondAttribute="bottom" constant="25" id="YPV-2K-2Nl"/>
+                            <constraint firstItem="mUB-5X-PoQ" firstAttribute="top" secondItem="Ljc-PA-EB9" secondAttribute="top" constant="25" id="ali-i0-aaI"/>
+                            <constraint firstItem="bhK-0p-vYh" firstAttribute="leading" secondItem="Ljc-PA-EB9" secondAttribute="leading" constant="16" id="gcx-F2-iUy"/>
+                            <constraint firstItem="Ljc-PA-EB9" firstAttribute="trailing" secondItem="r82-rJ-6mS" secondAttribute="trailing" constant="16" id="qMT-Oe-sO3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ljc-PA-EB9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Temperature" id="VUN-IF-i3I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yI-4G-xkv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="-362.06896551724139"/>
+        </scene>
+        <!--Temperature-->
+        <scene sceneID="Osh-d7-4Uv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nbR-x6-uOp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Temperature" image="second" id="KQH-Xo-8MI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q0H-lB-IAz">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ufW-Mi-oye" kind="relationship" relationship="rootViewController" id="X2z-Zp-xU2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9D-YL-my3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-362"/>
         </scene>
     </scenes>
     <resources>
