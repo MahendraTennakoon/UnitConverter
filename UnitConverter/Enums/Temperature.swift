@@ -3,4 +3,3 @@ enum Temperature:String {
     case Celcius
     case Fahrenheit
 }
-
