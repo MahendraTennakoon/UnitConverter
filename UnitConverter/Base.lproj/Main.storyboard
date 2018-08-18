@@ -34,8 +34,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-Gc-oHE">
-                                <rect key="frame" x="16" y="65" width="51" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-Gc-oHE">
+                                <rect key="frame" x="16" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,8 +49,8 @@
                                     <action selector="updateWeight:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="6hR-xT-ij1"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilograms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5F-yc-g2q">
-                                <rect key="frame" x="16" y="106" width="77" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilogram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5F-yc-g2q">
+                                <rect key="frame" x="16" y="106" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -65,17 +65,57 @@
                                     <action selector="updateWeight:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="Ul8-Lp-UcK"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-7B-bmb">
+                                <rect key="frame" x="16" y="146" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FzL-Qi-DRJ">
+                                <rect key="frame" x="101" y="141" width="258" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="updateWeight:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="ziO-0m-JRf"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ounce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-xz-pW0">
+                                <rect key="frame" x="18" y="185" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J9O-RZ-4er">
+                                <rect key="frame" x="101" y="180" width="260" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="updateWeight:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="N2Y-vr-LOE"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="KXe-7B-bmb" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="126" id="2gc-wK-gBr"/>
+                            <constraint firstItem="hWW-xz-pW0" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="18" id="4cb-dg-FHQ"/>
                             <constraint firstItem="UnF-fZ-pea" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="75" id="4mI-6q-QbL"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="UnF-fZ-pea" secondAttribute="trailing" constant="16" id="5Za-3m-kME"/>
+                            <constraint firstItem="FzL-Qi-DRJ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="9pR-y2-qqE"/>
                             <constraint firstItem="rop-ir-6Y1" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="81" id="Dtj-Sy-OCQ"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="rop-ir-6Y1" secondAttribute="trailing" constant="16" id="QUA-Ss-OE2"/>
+                            <constraint firstItem="hWW-xz-pW0" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="165" id="S62-YA-5Ry"/>
                             <constraint firstItem="p8o-Gc-oHE" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="Vmh-20-yun"/>
                             <constraint firstItem="rop-ir-6Y1" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="Wgk-fW-QWQ"/>
+                            <constraint firstItem="FzL-Qi-DRJ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="121" id="Xqk-ct-nfN"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="FzL-Qi-DRJ" secondAttribute="trailing" constant="16" id="Zkg-PH-IXY"/>
                             <constraint firstItem="UnF-fZ-pea" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="40" id="b3s-dV-r1C"/>
                             <constraint firstItem="p8o-Gc-oHE" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="45" id="eW9-lL-yew"/>
+                            <constraint firstItem="J9O-RZ-4er" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="160" id="hxf-1d-05g"/>
+                            <constraint firstItem="KXe-7B-bmb" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="u8T-8d-eMH"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="J9O-RZ-4er" secondAttribute="trailing" constant="14" id="wz7-Bn-yKT"/>
+                            <constraint firstItem="J9O-RZ-4er" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="101" id="xY4-YF-wNU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -83,6 +123,8 @@
                     <connections>
                         <outlet property="gramsField" destination="UnF-fZ-pea" id="YXj-7u-xcu"/>
                         <outlet property="kilogramsField" destination="rop-ir-6Y1" id="6xf-tQ-tRw"/>
+                        <outlet property="ouncesField" destination="J9O-RZ-4er" id="uGa-Cx-5XA"/>
+                        <outlet property="poundsField" destination="FzL-Qi-DRJ" id="zWq-3E-SoO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
