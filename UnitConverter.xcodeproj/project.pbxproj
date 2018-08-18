@@ -16,6 +16,11 @@
 		E2316D8821273750005EB8C1 /* UnitConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316D8721273750005EB8C1 /* UnitConverterTests.swift */; };
 		E2316D9321273750005EB8C1 /* UnitConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316D9221273750005EB8C1 /* UnitConverterUITests.swift */; };
 		E2316DA12128A572005EB8C1 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DA02128A572005EB8C1 /* Weight.swift */; };
+		E2316DA32128C238005EB8C1 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DA22128C238005EB8C1 /* Temperature.swift */; };
+		E2316DA52128CAD0005EB8C1 /* MetricConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DA42128CAD0005EB8C1 /* MetricConversionStrategy.swift */; };
+		E2316DA72128CBCC005EB8C1 /* WeightConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DA62128CBCC005EB8C1 /* WeightConversionStrategy.swift */; };
+		E2316DA92128CCA3005EB8C1 /* TemperatureConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DA82128CCA3005EB8C1 /* TemperatureConversionStrategy.swift */; };
+		E2316DAB2128D1BE005EB8C1 /* UnitConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DAA2128D1BE005EB8C1 /* UnitConvert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		E2316D9221273750005EB8C1 /* UnitConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverterUITests.swift; sourceTree = "<group>"; };
 		E2316D9421273750005EB8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2316DA02128A572005EB8C1 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		E2316DA22128C238005EB8C1 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		E2316DA42128CAD0005EB8C1 /* MetricConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricConversionStrategy.swift; sourceTree = "<group>"; };
+		E2316DA62128CBCC005EB8C1 /* WeightConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightConversionStrategy.swift; sourceTree = "<group>"; };
+		E2316DA82128CCA3005EB8C1 /* TemperatureConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConversionStrategy.swift; sourceTree = "<group>"; };
+		E2316DAA2128D1BE005EB8C1 /* UnitConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConvert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,11 @@
 				E2316D7B21273750005EB8C1 /* LaunchScreen.storyboard */,
 				E2316D7E21273750005EB8C1 /* Info.plist */,
 				E2316DA02128A572005EB8C1 /* Weight.swift */,
+				E2316DA22128C238005EB8C1 /* Temperature.swift */,
+				E2316DA42128CAD0005EB8C1 /* MetricConversionStrategy.swift */,
+				E2316DA62128CBCC005EB8C1 /* WeightConversionStrategy.swift */,
+				E2316DA82128CCA3005EB8C1 /* TemperatureConversionStrategy.swift */,
+				E2316DAA2128D1BE005EB8C1 /* UnitConvert.swift */,
 			);
 			path = UnitConverter;
 			sourceTree = "<group>";
@@ -265,9 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2316DA52128CAD0005EB8C1 /* MetricConversionStrategy.swift in Sources */,
+				E2316DA72128CBCC005EB8C1 /* WeightConversionStrategy.swift in Sources */,
 				E2316D7521273750005EB8C1 /* TemperatureViewController.swift in Sources */,
 				E2316D7121273750005EB8C1 /* AppDelegate.swift in Sources */,
 				E2316D7321273750005EB8C1 /* WeightViewController.swift in Sources */,
+				E2316DA92128CCA3005EB8C1 /* TemperatureConversionStrategy.swift in Sources */,
+				E2316DAB2128D1BE005EB8C1 /* UnitConvert.swift in Sources */,
+				E2316DA32128C238005EB8C1 /* Temperature.swift in Sources */,
 				E2316DA12128A572005EB8C1 /* Weight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

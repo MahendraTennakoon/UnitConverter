@@ -236,6 +236,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="S7b-ml-NUM"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMp-QP-eyh">
                                 <rect key="frame" x="16" y="135" width="81" height="21"/>
@@ -248,6 +251,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="JeU-M0-KN6"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kelvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-0p-vYh">
                                 <rect key="frame" x="16" y="181" width="46" height="21"/>
@@ -260,6 +266,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="ikl-a6-8Ut"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celcius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUB-5X-PoQ">
                                 <rect key="frame" x="16" y="89" width="56" height="21"/>
@@ -289,6 +298,11 @@
                         <viewLayoutGuide key="safeArea" id="Ljc-PA-EB9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="VUN-IF-i3I"/>
+                    <connections>
+                        <outlet property="celciusField" destination="jTb-IB-7U7" id="1QF-8Q-VPd"/>
+                        <outlet property="fahrenheitField" destination="YiY-yI-ozS" id="1hH-no-sSg"/>
+                        <outlet property="kelvinField" destination="r82-rJ-6mS" id="DSm-By-2j8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4yI-4G-xkv" sceneMemberID="firstResponder"/>
             </objects>
