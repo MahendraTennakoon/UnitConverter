@@ -8,7 +8,9 @@ class TemperatureViewController: UIViewController {
     @IBOutlet weak var kelvinField: UITextField!
     
     @IBAction func updateValue(_ sender: UITextField) {
-        let value = Double(sender.text!)
+        guard let value = Double(sender.text!) else {
+            return
+        }
         
         let converter = UnitConvert(strategy: TemperatureConversionStrategy())
         var kelvin: Double = 0
@@ -17,19 +19,19 @@ class TemperatureViewController: UIViewController {
         
         switch sender {
         case celciusField:
-            kelvin = converter.convert(unitFrom: Temperature.Celcius.rawValue, unitTo: Temperature.Kelvin.rawValue, value: value!)
-            celcius = value!
-            fahrenheit = converter.convert(unitFrom: Temperature.Celcius.rawValue, unitTo: Temperature.Fahrenheit.rawValue, value: value!)
+            kelvin = converter.convert(unitFrom: Temperature.Celcius.rawValue, unitTo: Temperature.Kelvin.rawValue, value: value)
+            celcius = value
+            fahrenheit = converter.convert(unitFrom: Temperature.Celcius.rawValue, unitTo: Temperature.Fahrenheit.rawValue, value: value)
             break
         case fahrenheitField:
-            kelvin = converter.convert(unitFrom: Temperature.Fahrenheit.rawValue, unitTo: Temperature.Kelvin.rawValue, value: value!)
-            celcius = converter.convert(unitFrom: Temperature.Fahrenheit.rawValue, unitTo: Temperature.Celcius.rawValue, value: value!)
-            fahrenheit = value!
+            kelvin = converter.convert(unitFrom: Temperature.Fahrenheit.rawValue, unitTo: Temperature.Kelvin.rawValue, value: value)
+            celcius = converter.convert(unitFrom: Temperature.Fahrenheit.rawValue, unitTo: Temperature.Celcius.rawValue, value: value)
+            fahrenheit = value
             break
         case kelvinField:
-            kelvin = value!
-            celcius = converter.convert(unitFrom: Temperature.Kelvin.rawValue, unitTo: Temperature.Celcius.rawValue, value: value!)
-            fahrenheit = converter.convert(unitFrom: Temperature.Kelvin.rawValue, unitTo: Temperature.Fahrenheit.rawValue, value: value!)
+            kelvin = value
+            celcius = converter.convert(unitFrom: Temperature.Kelvin.rawValue, unitTo: Temperature.Celcius.rawValue, value: value)
+            fahrenheit = converter.convert(unitFrom: Temperature.Kelvin.rawValue, unitTo: Temperature.Fahrenheit.rawValue, value: value)
             break
         default:
             // 0 kelvin
