@@ -25,6 +25,8 @@ class TemperatureConversionStrategy:MetricConversionStrategy {
             return (value + 273.15)
         case Temperature.Fahrenheit.rawValue:
             return (value + 459.67) * 5 / 9
+        case Temperature.Kelvin.rawValue:
+            return value
         default:
             return -1
         }
