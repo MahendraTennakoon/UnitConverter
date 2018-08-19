@@ -24,6 +24,9 @@
 		E2316DAE2128E090005EB8C1 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DAD2128E090005EB8C1 /* DistanceViewController.swift */; };
 		E2316DB02128E0DC005EB8C1 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DAF2128E0DC005EB8C1 /* Distance.swift */; };
 		E2316DB22128E133005EB8C1 /* DistanceConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DB12128E133005EB8C1 /* DistanceConversionStrategy.swift */; };
+		E2316DB42128EAEE005EB8C1 /* SpeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DB32128EAEE005EB8C1 /* SpeedViewController.swift */; };
+		E2316DB62128EB16005EB8C1 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DB52128EB16005EB8C1 /* Speed.swift */; };
+		E2316DB82128EB6E005EB8C1 /* SpeedConversionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2316DB72128EB6E005EB8C1 /* SpeedConversionStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		E2316DAD2128E090005EB8C1 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		E2316DAF2128E0DC005EB8C1 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		E2316DB12128E133005EB8C1 /* DistanceConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConversionStrategy.swift; sourceTree = "<group>"; };
+		E2316DB32128EAEE005EB8C1 /* SpeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedViewController.swift; sourceTree = "<group>"; };
+		E2316DB52128EB16005EB8C1 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
+		E2316DB72128EB6E005EB8C1 /* SpeedConversionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConversionStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,8 @@
 				E2316DAA2128D1BE005EB8C1 /* UnitConvert.swift */,
 				E2316DAD2128E090005EB8C1 /* DistanceViewController.swift */,
 				E2316DB12128E133005EB8C1 /* DistanceConversionStrategy.swift */,
+				E2316DB32128EAEE005EB8C1 /* SpeedViewController.swift */,
+				E2316DB72128EB6E005EB8C1 /* SpeedConversionStrategy.swift */,
 			);
 			path = UnitConverter;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 				E2316DA02128A572005EB8C1 /* Weight.swift */,
 				E2316DA22128C238005EB8C1 /* Temperature.swift */,
 				E2316DAF2128E0DC005EB8C1 /* Distance.swift */,
+				E2316DB52128EB16005EB8C1 /* Speed.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -302,11 +311,14 @@
 				E2316D7521273750005EB8C1 /* TemperatureViewController.swift in Sources */,
 				E2316DAE2128E090005EB8C1 /* DistanceViewController.swift in Sources */,
 				E2316DB02128E0DC005EB8C1 /* Distance.swift in Sources */,
+				E2316DB42128EAEE005EB8C1 /* SpeedViewController.swift in Sources */,
 				E2316D7121273750005EB8C1 /* AppDelegate.swift in Sources */,
 				E2316D7321273750005EB8C1 /* WeightViewController.swift in Sources */,
 				E2316DA92128CCA3005EB8C1 /* TemperatureConversionStrategy.swift in Sources */,
+				E2316DB82128EB6E005EB8C1 /* SpeedConversionStrategy.swift in Sources */,
 				E2316DAB2128D1BE005EB8C1 /* UnitConvert.swift in Sources */,
 				E2316DA32128C238005EB8C1 /* Temperature.swift in Sources */,
+				E2316DB62128EB16005EB8C1 /* Speed.swift in Sources */,
 				E2316DB22128E133005EB8C1 /* DistanceConversionStrategy.swift in Sources */,
 				E2316DA12128A572005EB8C1 /* Weight.swift in Sources */,
 			);
