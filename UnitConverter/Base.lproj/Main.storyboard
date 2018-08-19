@@ -22,7 +22,7 @@
                                 <rect key="frame" x="98" y="86" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="6hR-xT-ij1"/>
                                 </connections>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="98" y="132" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="Ul8-Lp-UcK"/>
                                 </connections>
@@ -52,7 +52,7 @@
                                 <rect key="frame" x="98" y="178" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="ziO-0m-JRf"/>
                                 </connections>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="98" y="224" width="261" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="N2Y-vr-LOE"/>
                                 </connections>
@@ -167,7 +167,7 @@
                                 <rect key="frame" x="112" y="86" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="S7b-ml-NUM"/>
                                 </connections>
@@ -182,7 +182,7 @@
                                 <rect key="frame" x="112" y="132" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="JeU-M0-KN6"/>
                                 </connections>
@@ -197,7 +197,7 @@
                                 <rect key="frame" x="112" y="178" width="247" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="ufW-Mi-oye" eventType="editingDidEnd" id="ikl-a6-8Ut"/>
                                 </connections>
@@ -270,7 +270,7 @@
                                 <rect key="frame" x="101" y="86" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="Rcu-3s-P52" eventType="editingDidEnd" id="Qbw-O3-DaQ"/>
                                 </connections>
@@ -285,7 +285,7 @@
                                 <rect key="frame" x="101" y="132" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="Rcu-3s-P52" eventType="editingDidEnd" id="rr9-dc-glY"/>
                                 </connections>
@@ -300,7 +300,7 @@
                                 <rect key="frame" x="101" y="178" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="Rcu-3s-P52" eventType="editingDidEnd" id="qo6-ET-UHy"/>
                                 </connections>
@@ -315,7 +315,7 @@
                                 <rect key="frame" x="101" y="224" width="258" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="Rcu-3s-P52" eventType="editingDidEnd" id="B77-bO-Jl7"/>
                                 </connections>
@@ -339,7 +339,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="Rcu-3s-P52" eventType="editingDidEnd" id="5zQ-lI-7bl"/>
                                 </connections>
@@ -422,7 +422,7 @@
                                 <rect key="frame" x="159" y="86" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="j9r-xe-tT6" eventType="editingDidEnd" id="12p-cy-4b6"/>
                                 </connections>
@@ -437,7 +437,7 @@
                                 <rect key="frame" x="159" y="132" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="j9r-xe-tT6" eventType="editingDidEnd" id="hhp-D1-2Sk"/>
                                 </connections>
@@ -452,7 +452,7 @@
                                 <rect key="frame" x="166" y="178" width="193" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="j9r-xe-tT6" eventType="editingDidEnd" id="cEq-Kr-vBr"/>
                                 </connections>
@@ -467,7 +467,7 @@
                                 <rect key="frame" x="159" y="224" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="updateValue:" destination="j9r-xe-tT6" eventType="editingDidEnd" id="5E9-Dd-9Da"/>
                                 </connections>
